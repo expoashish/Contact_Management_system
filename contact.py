@@ -1,6 +1,7 @@
+# Best Code Creator
+# Created by Ashish Yadav
 
 global data,main_data
-
 filename="contact_data.csv"
 
 f=open(filename,'r')
@@ -87,7 +88,6 @@ class contact_system():
 
 		if (self.write_file(main_data)):
 			print("Successfully Deleted !")
-			self.menu()
 		else:
 			print("Try Again!! ")
 				
@@ -109,13 +109,12 @@ class main():
 	def menu():
 		my_class=contact_system()
 
-		print( '\n'""" >>>>>>>>>>> Welcome To Contact Management <<<<<<<<<<<<
+		print( '\n'""" >>>>>>>>>>> Welcome To Contact Management System <<<<<<<<<<<<
 			1.=Contact List
 			2.=Add Contact
 			3.=Edit Contact
 			4.=Remove Contact
 			5.=Exit
-
 			""")
 		try:
 			user_input=int(input("Please Enter option from above (1-5) : "))
@@ -144,19 +143,9 @@ class main():
 				print("Incorrect User ID!!")
 
 		elif user_input==5:
+			print("Thankyou for Using Our Contact Management System")
 			quit()
 
 		else:
 			print("Invalid Input!!")
 	menu()			
-		
-		
-		
-		
-		
-				
-
-
-
-
-
